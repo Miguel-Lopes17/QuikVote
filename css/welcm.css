@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #fff;
+    margin: 0 auto;
+    width: 100%;
+    height: 13vh;
+    border-bottom: 2px solid rgb(233, 232, 232);
+    
+}
+
+.navbar img{
+   height: 70px;
+}
+
+#logo{
+margin: 0 15px;
+}
+
+.check{
+    margin-right: 20px ;
+}
+
+.check a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+    background-color: #2d0147;
+    padding: 12px;
+    border-radius: 100px;
+    transition: 0.4s;
+}
+
+.check a:hover{
+    color: #2d0147;
+    background-color: #f1f2fc;
+}
+
+.div {
+    line-height: 40px;
+}
+
+.navbar h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #150022;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #2d0147;
+    transition: .5s ease-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover{
+    color: #bd02ce;
+}
+
+.menuOculto {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #ddd;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    
+}
+
+.menuOculto a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #bd02ce;
+    display: block;
+    transition: 0.3s;
+}
+
+.menuOculto a:hover {
+    color: #670270;
+}
+
+.menuOculto .btnfechar {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+
+}
+
+#principal {
+    padding: 16px;
+    transition: margin-left 0.5;
+    display: none;
+}
+
+.barras {
+    display: none;
+    top: 0;
+    right: 0;
+}
+
+
+@media screen and(max-height: 450px){
+    .menuOculto{padding-top: 15px;}
+    .menuOculto a{font-size: 18;}
+}
+
+
+
+
+
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;    
+    min-height: 70vh;
+}
+
+.bem-vindo{
+    margin: 50px;
+}
+
+.bem-vindo h1{
+    font-size: 2.5em;
+    padding: -5px;
+    
+}
+
+.bem-vindo span{
+    color: #bd02ce;
+}
+
+.bem-vindo p{
+    font-size: 1.3em;
+    line-height: 35px;
+}
+
+.welcome button {
+    
+    border: none;
+    border-radius: 20px;
+    font-size: 1.7em;
+    font-weight: bold;
+    width: 300px;
+    height: 70px;
+    background-color: #3b005f 
+}
+
+.welcome button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.welcome button:hover{
+    background-color:  #2d0147;
+    color: #ffffff;
+    transform: scale(1.07);
+    transition: 0.3s;
+}
+
+.draw img{
+    width: 600px; 
+    top: 100px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: rgb(21,0,34);
+    background: linear-gradient(180deg, rgba(21,0,34,1) 9%, rgba(48,0,62,1) 51%, rgba(95,1,110,1) 76%, rgba(189,2,206,1) 100%);
+    min-height: 70vh;  
+}
+
+
+.Go h1{
+    font-size: 2.5em;
+    color: #bd02ce;
+}
+
+.howuse{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bi-card-list , .bi-people , .bi-bar-chart  {
+    color: #bd02ce;
+}
+
+.step h3{
+    
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 0 auto;
+    
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    line-height: 20px;
+    border-radius: 10px;
+    
+    
+}
+
+.step p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.passos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; 
+    min-height: 70vh;
+}
+
+.passo  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 55vh;
+    transition: 0.3s;
+    margin-top: 50px;
+    line-height: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.step-icon {
+    color: #bd02ce;
+    font-size: 5em;
+    margin-bottom: 10px;
+}
+
+.step-description {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+footer{
+background-color: #2d0147;
+min-height: 30vh;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+color: #eaebff;
+}
+
+.icons{
+    display: flex;
+    margin-top: 30px;    
+}
+
+.icon:hover{
+    color: #bd02ce;
+}
+
+
+
+
+
+/*about page*/
+
+.about{
+    min-height: 80vh;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;    
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    transition: 0.3s;
+    margin-top: 50px;
+    line-height: 20px;
+    box-shadow: 0.5px 1px 1px ;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    
+}
+
+.card img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card h2 {
+    display:  flex;
+    justify-content: start;
+    font-size: 25px ;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #000000;
+}
+
+.card p {
+    display: flex;
+    justify-content: start;
+    color: #000000;
+    margin: 14px;
+}

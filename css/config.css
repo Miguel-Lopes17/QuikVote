@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #fff;
+    margin: 0 auto;
+    width: 100%;
+    height: 13vh;
+    border-bottom: 2px solid rgb(233, 232, 232);
+}
+
+.navbar img{
+   height: 70px;
+}
+
+#logo{
+  margin: 0 20px;
+  }
+
+  .menuOculto {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #2d0147;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.menuOculto a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.menuOculto a:hover {
+    color: #bd02ce;
+}
+
+.menuOculto .btnfechar {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+#principal {
+    padding: 16px;
+    transition: margin-left 0.5;
+}
+
+.barras {
+    top: 0;
+    margin-right: 20px;
+}
+
+
+@media screen and(max-height: 450px){
+    .menuOculto{padding-top: 15px;}
+    .menuOculto a{font-size: 18;}
+}
+
+header {
+    display: flex;
+}
+
+.setting {
+    
+    border: 3px solid rgb(88, 88, 88);
+    min-height: 70vh;
+    min-width: 20%;
+}
+
+.setting h2 {
+    color: rgb(88, 88, 88);
+    display: flex;
+    justify-content: center;
+}
+
+.account {
+    
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(88, 88, 88);
+}
+
+.account:hover{
+    background-color: #eaebff;
+}
+
+.bi-person-fill , .bi-person-vcard-fill {
+    margin-left: 15px;
+    font-size: 23px;
+}
+
+.cads {
+    padding: 16px;
+    width: 80%;
+}
+
+
+
+
+
+
+footer{
+    background-color: #2d0147;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    color: #eaebff;
+    }
+    
+    .icons{
+        display: flex;
+        margin-top: 30px;    
+    }
+    
+    .icon:hover{
+        color: #bd02ce;
+    }
+    

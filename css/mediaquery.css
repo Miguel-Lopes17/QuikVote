@@ -1,0 +1,135 @@
+@media (max-width: 768px ){
+
+    .navbar img{
+        display: none;
+    }
+
+    .navbar #logo{
+        display: flex;
+    }
+
+    .bem-vindo h1 {
+        font-size: 2.3em;
+        line-height: 35px
+    }
+
+    .bem-vindo p {
+        font-size: 1.2em;
+        line-height: 30px;
+    }
+
+    .nav-link{
+        padding: 10px;
+        font-size: 1.3em;
+    }
+
+    
+    .Go h2{
+        font-size: 2.2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }
+
+    .welcome button{
+        border: none;
+    border-radius: 15px;
+    font-size: 1.4em;
+    font-weight: bold;
+    width: 200px;
+    height: 60px;
+    background-color: #3b005f
+    }
+
+    .step p{
+        max-width: 350px;
+    }
+
+    .dropdown{
+        display: none;
+    }
+
+    .barras {
+        display: flex;
+       margin-left: 200px;
+       
+    }
+
+    #principal{
+        display: flex;
+    }
+
+    .Go h1 {
+        font-size: 1.8em;
+        }
+    
+        .Go h1 span{
+            display: flex;
+            justify-content: center;
+        }
+
+       
+
+    /* login */
+
+    /***************/
+    .nav-links {
+        display: none;
+    }
+
+    /* Inicio */
+
+    .vote h1 {
+        margin: 15px;
+    }
+    
+    .vote h2 {
+        margin: 15px;
+    }
+
+    .title button {
+        margin: 10px 70px;
+    }
+
+}
+
+
+
+
+
+
+
+@media (max-width:1145px) {
+
+    .draw img{
+       width: 400px;
+    }
+    
+    .card{
+        width: 250px;
+    }
+
+    
+}
+
+
+
+
+@media  (max-width: 1024px) {
+    .draw img{
+        display: none;
+    }
+
+   .welcm {
+    display: none;
+   }
+
+
+}
+
+
+
+
+
+/* 510px mudar o nav */

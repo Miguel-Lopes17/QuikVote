@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QuickVote</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="imagex/" href="./img/capa.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/mediaquery.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/cxt3tyq.css">
+   
+
+
+</head>
+<body>
+
+
+    <div class="main">
+
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+            <div class="signup">
+                
+                <form>
+                    <label for="chk" aria-hidden="true">Registrar-se</label>
+                    <input type="text" name="txt" placeholder="Nome" required="">
+                    <input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="pswd" placeholder="Senha" required="">
+                    <button>Restristrar</button>
+                </form>
+            </div>
+
+            <div class="login">
+                <form action="inicio.html?auth">
+                    <label for="chk" aria-hidden="true">Entrar</label>
+                    <input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="pswd" placeholder="Senha" required="">
+                    <button  id="sweetalert" class="enter">Iniciar</button>
+                </form>
+            </div>
+    </div>
+
+
+    
+   
+</body>
+ <script src="sweetalert2.all.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="../js/login.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</html>
